@@ -1,102 +1,80 @@
-/* Search for interested companies */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
 
 .searchContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .searchInput {
-  padding: 10px 10px;
-  background-color: white;
-  min-width: 80%;
-  border-radius: 5px;
-  border: 1px solid rgb(5, 5, 39);
-  margin: 9px;
-}
-
-.searchBtn {
+  width: 60%;
   padding: 10px;
-  background-color: rgb(52, 52, 126);
-  border: none;
   border-radius: 5px;
-  color: white;
+  border: 1px solid #ccc;
+  font-size: 16px;
 }
 
-.searchBtn:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-/* filtering */
-
-.filter {
+.cardsContainer {
   display: flex;
-}
-
-.filter p {
-  margin-right: 10px;
-  font-size: 1.2rem;
-  color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* companies card */
-/* Card container */
-
-.companiescard {
- display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
+  justify-content: center;
 }
 
 .card {
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  border: rgb(245, 239, 239);
-  background-color: whitesmoke;
-  margin: 15px;
+  background-color: #f7f7f7;
   padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card h2 {
-  text-align: center;
-  font-size: 1.5rem;
+.companyName {
+  color: #2980b9;
+  margin-bottom: 5px;
 }
 
-.details {
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 5 equal columns */
-  gap: 10px;
-  padding: 10px;
+.jobRole {
+  color: #16a085;
+  margin-bottom: 10px;
 }
 
-.company {
-  grid-column: span 4;
-  font-size: 1.2rem;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
+.readMoreBtn {
+  margin-left: 5px;
+  border: none;
+  background: none;
+  color: #27ae60;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-
-.applybtn {
-  text-align: center;
+.careerLink {
   display: inline-block;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #007bff;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #2980b9;
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 
-.applybtn:hover {
-  background-color: #0056b3;
+.careerLink:hover {
+  background-color: #3498db;
+}
+
+.noResults {
+  text-align: center;
+  color: #e74c3c;
+  font-weight: bold;
 }
