@@ -1,11 +1,102 @@
-.search-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Search for interested companies */
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
 }
 
-.search-input{
-    padding: 10px 10px;
-    background-color: antiquewhite;
-    width:80%;
+.searchInput {
+  padding: 10px 10px;
+  background-color: white;
+  min-width: 80%;
+  border-radius: 5px;
+  border: 1px solid rgb(5, 5, 39);
+  margin: 9px;
+}
+
+.searchBtn {
+  padding: 10px;
+  background-color: rgb(52, 52, 126);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.searchBtn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* filtering */
+
+.filter {
+  display: flex;
+}
+
+.filter p {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* companies card */
+/* Card container */
+
+.companiescard {
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border: rgb(245, 239, 239);
+  background-color: whitesmoke;
+  margin: 15px;
+  padding: 20px;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.details {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 5 equal columns */
+  gap: 10px;
+  padding: 10px;
+}
+
+.company {
+  grid-column: span 4;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+
+.applybtn {
+  text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.applybtn:hover {
+  background-color: #0056b3;
 }
