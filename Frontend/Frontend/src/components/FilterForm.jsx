@@ -1,72 +1,84 @@
 import styles from "./Filter.module.css";
 import bg from "../assets/filterformbg2.jpeg";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function FilterForm() {
+  const navigate = useNavigate();
+  const [name, setName] = useState("");
+  const [year, setYear] = useState("3");
+  const [branch, setBranch] = useState("select");
+  const [cgpa, setCgpa] = useState("");
+  const [backlogs, setBacklogs] = useState("");
+  const [interest, setInterest] = useState("select");
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const navigate = useNavigate();
-    navigate("/companieslist");
+
+    navigate("/companieslist", {
+      state: { name, year, branch, cgpa, backlogs, interest },
+    });
   };
 
   return (
-    <div>
-      <div
-        className={styles.filterform}
-        style={{ backgroundImage: `url(${bg})` }}
-      >
-        <form action="">
-          <label htmlFor="name">Name</label>
-          <br />
-          <input type="text" />
-          <br />
-          <label htmlFor="year">Year</label>
-          <br />
-          <select name="" id="">
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-          <br />
-          <label htmlFor="branch">Branch</label>
-          <br />
-          <select name="branch" id="branch">
-            <option value="select">--select--</option>
-            <option value="CSE">CSE</option>
-            <option value="CSM">CSM</option>
-            <option value="IT">IT</option>
-            <option value="ECE">ECE</option>
-            <option value="EEE">EEE</option>
-            <option value="MECH">MECH</option>
-            <option value="CIVIL">CIVIL</option>
-          </select>
-          <br />
-          <label htmlFor="cgpa">Cgpa</label>
-          <br />
-          <input type="decimal" />
-          <br />
-          <label htmlFor="backlogs">BackLogs</label>
-          <br />
-          <input type="number" />
-          <br />
-          {/* is possible internshipdetails */}
-          <label htmlFor="interest">Sector of Interest</label>
-          <br />
-          <select name="interest" id="interest">
-            <option value="select">--select--</option>
-            <option value="fsd">Full Stack Development</option>
-            <option value="ml">Machine learning</option>
-            <option value="ds">Data Science</option>
-            <option value="cyber">Cybersecurity</option>
-            {/* can add more interest based on data of companies.. */}
-          </select>
-          <br />
-          <input type="submit" name="" id="" />
-          <button type="submit" onClick={handleSubmit}>
-            Submit
-          </button>
-        </form>
-      </div>
+    <div
+      className={styles.filterform}
+      style={{ backgroundImage: `url(${bg})` }}
+    >
+      <form onSubmit={handleSubmit}>
+        <label>Name</label><br></br>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+  <br></br>
+        <label>Year</label><br></br>
+        <select value={year} onChange={(e) => setYear(e.target.value)}>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+<br></br>
+        <label>Branch</label><br></br>
+        <select value={branch} onChange={(e) => setBranch(e.target.value)}>
+          <option value="select">--select--</option>
+          <option value="CSE">CSE</option>
+          <option value="CSM">CSM</option>
+          <option value="IT">IT</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="MECH">MECH</option>
+          <option value="CIVIL">CIVIL</option>
+        </select>
+<br></br>
+        <label>Cgpa</label><br></br>
+        <input
+          type="number"
+          step="0.1"
+          value={cgpa}
+          onChange={(e) => setCgpa(e.target.value)}
+        />
+<br></br>
+        <label>Backlogs</label><br></br>
+        <input
+          type="number"
+          value={backlogs}
+          onChange={(e) => setBacklogs(e.target.value)}
+        />
+<br></br>
+        <label>Sector of Interest</label><br></br>
+        <select value={interest} onChange={(e) => setInterest(e.target.value)}>
+          <option value="select">--select--</option>
+          <option value="fsd">Full Stack Development</option>
+          <option value="ml">Machine learning</option>
+          <option value="ds">Data Science</option>
+          <option value="cyber">Cybersecurity</option>
+        </select>
+<br></br>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   );
 }
+
 export default FilterForm;
