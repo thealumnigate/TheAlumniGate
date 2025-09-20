@@ -6,6 +6,7 @@ import Nav from "./components/Nav.jsx";
 import FilterForm from "./components/FilterForm.jsx";
 import CompaniesList from "./components/CompaniesList.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ApplicationForm from "./components/ApplicationForm.jsx";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path="/filterform" element={<FilterForm/>}/>
       {/* comapanies list page */}
       <Route path="/companieslist" element={<CompaniesList/>}/>
+      <Route path="/applicationform" element={<ApplicationForm/>}></Route>
      </Routes>
    </Router>
   );
