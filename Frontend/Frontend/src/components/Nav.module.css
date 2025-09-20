@@ -1,40 +1,45 @@
 /*nav*/
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin: 0;
-  background: linear-gradient(to right, #87CEEB, #1E3A8A);
-
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+  background: linear-gradient(to right, #87ceeb, #1e3a8a);
+  border-radius: 10px;
 }
 
 /*Signup*/
 
-.signup{
-    padding:10px 15px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 10px;
+.signup {
+  padding: 10px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
 }
 
-.signup:hover{
-    opacity: 0.8;
-    cursor: pointer;
+.signup:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /*Links-optns*/
 
-.link{
-    text-decoration: none;
-    color:rgb(32, 23, 82);
-    font-size:1.5rem;
-    font-family: monospace;
+.link {
+  text-decoration: none;
+  color: rgb(32, 23, 82);
+  font-size: 1.5rem;
+  font-family: monospace;
 }
 
-.link:hover{
-    cursor: pointer;
-    opacity: 0.6;
+.link:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.right .link {
+  margin-right: 20px;
+  padding-left: 15px;
 }

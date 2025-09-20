@@ -1,18 +1,66 @@
 import styles from "./ApplicationForm.module.css";
+import { useForm } from "react-hook-form";
 
 function ApplicationForm() {
+  //for form validation using react-hook-form by register("field",rules)
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  //onsubmit calls when their is no error typo in the application form...
+  const onSubmit = (data) => {
+    console.log("form data:", data);
+    alert("form submitted successfully");
+    // functionality for successfull submission and redirects to unique id generation...
+  };
+
   return (
     <div>
       <h2 className={styles.formheading}>Application Form</h2>
       <div className={styles.applyformConatiner}>
-        <form action="" className={styles.applyform}>
+        <form
+          action=""
+          className={styles.applyform}
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <section>
             <h3>Personal Details</h3>
             <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullName" required />
-
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              required
+              {...register("fullname", {
+                required: "Username is required",
+                minLength: {
+                  value: 3,
+                  message: "Name should contain at least 3 characters",
+                },
+              })}
+            />
+            {errors.fullname && (
+              <p style={{ color: "red" }}>{errors.fullname.message}</p>
+            )}
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              {...register("email", {
+                required: "Email is required",
+                pattern: {
+                  value: /\S+@\S+\.\S+/,
+                  message: "Invalid email format",
+                },
+              })}
+            />
+            {errors.email && (
+              <p style={{ color: "red" }}>{errors.email.message}</p>
+            )}
 
             <label for="phone">Phone Number</label>
             <input
@@ -42,7 +90,23 @@ function ApplicationForm() {
           <section>
             <h3>Education Details</h3>
             <label for="university">University / College</label>
-            <input type="text" id="university" name="university" required />
+            <input
+              type="text"
+              id="university"
+              name="university"
+              required
+              {...register("university", {
+                required: "university is required",
+                minLength: {
+                  value: 8,
+                  message:
+                    "univeristy name should contain at least 8 characters,no shortcuts are allowed",
+                },
+              })}
+            />
+            {errors.university && (
+              <p style={{ color: "red" }}>{errors.university.message}</p>
+            )}
             <label for="branch">Branch</label>
             <select id="branch" name="branch" required>
               <option value="select">--select--</option>
@@ -64,9 +128,15 @@ function ApplicationForm() {
               min="0"
               max="10"
               required
+              {...register("cgpa", {
+                min: { value: 7.5, message: "To be eligible cgpa must be 7.5" },
+                max: { value: 10, message: "cgpa cannot exceed 10" },
+              })}
             />
-
-            <label for="university">Intermediate/Diploma</label>
+            {errors.cgpa && (
+              <p style={{ color: "red" }}>{errors.cgpa.message}</p>
+            )}
+            <label for="inter">Intermediate/Diploma</label>
             <input type="text" id="inter" name="inter" required />
 
             <label for="cgpa">Percentage</label>
@@ -80,7 +150,7 @@ function ApplicationForm() {
               required
             />
 
-            <label for="university">School</label>
+            <label for="schl">School</label>
             <input type="text" id="schl" name="schl" required />
 
             <label for="gpa">GPA</label>
@@ -124,15 +194,32 @@ function ApplicationForm() {
               id="leetcode"
               name="leetcode"
               placeholder="https://leetcode.com/in/yourprofile"
+               {...register("leetcode", {
+                pattern: {
+                  value:
+                    /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([\/\w .-]*)*\/?$/,
+                  message: "Enter a valid URL",
+                },
+              })}
             />
 
-            <label for="github">Hackerrank</label>
+             {errors.leetcode && <p style={{ color: "red" }}>{errors.leetcode.message}</p>}
+
+            <label for="hackerrank">Hackerrank</label>
             <input
               type="url"
               id="hackerrank"
               name="hackerrank"
               placeholder="https://hackerrank.com/yourusername"
+              {...register("hackerrank", {
+                pattern: {
+                  value:
+                    /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([\/\w .-]*)*\/?$/,
+                  message: "Enter a valid URL",
+                },
+              })}
             />
+            {errors.hackerrank && <p style={{ color: "red" }}>{errors.hackerrank.message}</p>}
           </section>
           {/* 
       <!-- Social Links --> */}
@@ -144,15 +231,31 @@ function ApplicationForm() {
               id="linkedin"
               name="linkedin"
               placeholder="https://linkedin.com/in/yourprofile"
+              {...register("linkedin", {
+                pattern: {
+                  value:
+                    /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([\/\w .-]*)*\/?$/,
+                  message: "Enter a valid URL",
+                },
+              })}
             />
-
+             {errors.linkedin && <p style={{ color: "red" }}>{errors.linkedin.message}</p>}
+             
             <label for="github">GitHub</label>
             <input
               type="url"
               id="github"
               name="github"
               placeholder="https://github.com/yourusername"
+              {...register("github", {
+                pattern: {
+                  value:
+                    /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([\/\w .-]*)*\/?$/,
+                  message: "Enter a valid URL",
+                },
+              })}
             />
+             {errors.github && <p style={{ color: "red" }}>{errors.github.message}</p>}
           </section>
           {/* resume and cv */}
 

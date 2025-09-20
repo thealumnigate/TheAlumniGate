@@ -12,6 +12,7 @@ function FilterForm() {
   const [backlogs, setBacklogs] = useState("");
   const [interest, setInterest] = useState("select");
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -25,6 +26,7 @@ function FilterForm() {
       className={styles.filterform}
       style={{ backgroundImage: `url(${bg})` }}
     >
+      <h2>Fill the below form</h2>
       <form className={styles.fform} onSubmit={handleSubmit}>
         <label>Name</label><br></br>
         <input

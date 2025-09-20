@@ -4,13 +4,17 @@ import {Link} from "react-router-dom"
 function Nav(){
     return (
     <nav>
-        <img src="" alt="logo" />
+        <div className={styles.left}>
+            <img src="" alt="logo" />
+        </div>
+        <div className={styles.right}>
         {/* <div className={styles.optns}> */}
         <Link to="/" className={styles.link}>Home</Link>
-        <Link to="/filterform" className={styles.link}>Form</Link>
+        <Link to="/filterform" className={styles.link}>FillForm</Link>
         <Link className={styles.link}>feature1</Link>
         {/* </div> */}
         <Link><button className={styles.signup}>Signup</button></Link>
+        </div>
         
     </nav>
     )
