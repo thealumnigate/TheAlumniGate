@@ -55,6 +55,8 @@ function CompaniesList() {
   const filters = location.state || {};
 
   const [expandedIndex, setExpandedIndex] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const toggleReadMore = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);
@@ -80,12 +82,38 @@ function CompaniesList() {
         ? company.interest === filters.interest
         : true;
 
-    return matchesBranch && matchesCgpa && matchesBacklogs && matchesInterest;
+     const matchesSearch = searchQuery
+      ? company.company_name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        company.job_role.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        company.required_skills.toLowerCase().includes(searchQuery.toLowerCase())
+      : true;
+
+    return (matchesBranch && matchesCgpa && matchesBacklogs && matchesInterest && matchesSearch);
   });
 
   return (
     <div className={styles.container}>
       <h1 className={styles.heading}>Matched Companies</h1>
+
+      <div className={styles.searchBox}>
+  <input
+    type="text"
+    placeholder="Search by company, role, or skills..."
+    value={searchTerm}
+    onChange={(e) => setSearchTerm(e.target.value)}
+    onKeyDown={(e) => {
+      if (e.key === "Enter") {
+        setSearchQuery(searchTerm); // Trigger search on Enter
+      }
+    }}
+    className={styles.searchInput}
+  />
+  <button
+    onClick={() => setSearchQuery(searchTerm)}
+    className={styles.searchBtn}>
+    Search
+  </button>
+</div>
 
       <div className={styles.cardsContainer}>
         {filteredCompanies.length > 0 ? (

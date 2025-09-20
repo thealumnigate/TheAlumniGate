@@ -1,55 +1,99 @@
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
-  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px 20px;
+  background-color: #fdfdfd;
 }
 
 .heading {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
   color: #2c3e50;
+  letter-spacing: 1px;
 }
 
+/* 🔹 Search Box */
 .searchContainer {
-  text-align: center;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
 }
 
 .searchInput {
-  width: 60%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  width: 65%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
   font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
 }
 
+.searchInput:focus {
+  border-color: #2980b9;
+  box-shadow: 0px 0px 6px rgba(41, 128, 185, 0.4);
+}
+
+/* 🔹 Search Button */
+.searchBtn {
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchBtn:hover {
+  background-color: #1f6390;
+}
+
+/* 🔹 Cards Layout */
 .cardsContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
 }
 
+/* 🔹 Company Card */
 .card {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   padding: 20px;
   width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .companyName {
   color: #2980b9;
+  font-size: 20px;
+  font-weight: bold;
   margin-bottom: 5px;
 }
 
 .jobRole {
   color: #16a085;
-  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
 
+/* 🔹 Read More Button */
 .readMoreBtn {
   margin-left: 5px;
   border: none;
@@ -57,24 +101,37 @@
   color: #27ae60;
   cursor: pointer;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
+.readMoreBtn:hover {
+  color: #1e8449;
+}
+
+/* 🔹 Career Link Button */
 .careerLink {
   display: inline-block;
-  margin-top: 10px;
-  padding: 8px 12px;
+  margin-top: 12px;
+  padding: 10px 14px;
   background-color: #2980b9;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .careerLink:hover {
-  background-color: #3498db;
+  background-color: #1f6390;
+  transform: scale(1.05);
 }
 
+/* 🔹 No Results */
 .noResults {
   text-align: center;
   color: #e74c3c;
+  font-size: 18px;
   font-weight: bold;
+  margin-top: 30px;
 }

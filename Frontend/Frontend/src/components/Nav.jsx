@@ -10,7 +10,7 @@ function Nav(){
         <Link to="/filterform" className={styles.link}>Form</Link>
         <Link className={styles.link}>feature1</Link>
         {/* </div> */}
-        <Link><button className={styles.signup}>Signup</button></Link>
+        <Link to="/auth"><button className={styles.signup}>Signup</button></Link>
         
     </nav>
     )
