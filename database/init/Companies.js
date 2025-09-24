@@ -1,4 +1,5 @@
 // Companies data for placement initialization
+import mongoose from "mongoose";
 
 const companies = [
   {
