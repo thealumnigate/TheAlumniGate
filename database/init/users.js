@@ -12,6 +12,11 @@ const students = [
     cgpa: 9.35,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0502",
@@ -25,6 +30,11 @@ const students = [
     cgpa: 9.33,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0503",
@@ -38,6 +48,11 @@ const students = [
     cgpa: 9.14,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0504",
@@ -51,6 +66,11 @@ const students = [
     cgpa: 8.66,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0505",
@@ -64,6 +84,11 @@ const students = [
     cgpa: 7.74,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0506",
@@ -77,6 +102,11 @@ const students = [
     cgpa: 8.62,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0507",
@@ -90,6 +120,11 @@ const students = [
     cgpa: 8.06,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0508",
@@ -103,6 +138,11 @@ const students = [
     cgpa: 9.57,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0509",
@@ -116,6 +156,11 @@ const students = [
     cgpa: 8.17,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0510",
@@ -129,6 +174,11 @@ const students = [
     cgpa: 6.69,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0511",
@@ -142,6 +192,11 @@ const students = [
     cgpa: 8.97,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0512",
@@ -155,6 +210,11 @@ const students = [
     cgpa: 9.03,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0513",
@@ -168,6 +228,11 @@ const students = [
     cgpa: 9.2,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0514",
@@ -181,6 +246,11 @@ const students = [
     cgpa: 8.5,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0515",
@@ -194,6 +264,11 @@ const students = [
     cgpa: 9.38,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   // IT
   {
@@ -208,6 +283,11 @@ const students = [
     cgpa: 8.23,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0517",
@@ -221,6 +301,11 @@ const students = [
     cgpa: 8.03,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0518",
@@ -234,6 +319,11 @@ const students = [
     cgpa: 5.03,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0519",
@@ -247,6 +337,11 @@ const students = [
     cgpa: 8.71,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0520",
@@ -260,6 +355,11 @@ const students = [
     cgpa: 9.0,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0521",
@@ -273,6 +373,11 @@ const students = [
     cgpa: 9.16,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0522",
@@ -286,6 +391,11 @@ const students = [
     cgpa: 8.09,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0523",
@@ -299,6 +409,11 @@ const students = [
     cgpa: 8.47,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0524",
@@ -312,6 +427,11 @@ const students = [
     cgpa: 7.85,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0525",
@@ -325,6 +445,11 @@ const students = [
     cgpa: 9.21,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0526",
@@ -338,6 +463,11 @@ const students = [
     cgpa: 9.53,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0527",
@@ -351,6 +481,11 @@ const students = [
     cgpa: 8.38,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0528",
@@ -364,6 +499,11 @@ const students = [
     cgpa: 9.46,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0529",
@@ -377,6 +517,11 @@ const students = [
     cgpa: 6.74,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0530",
@@ -390,6 +535,11 @@ const students = [
     cgpa: 8.97,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   // CSM
   {
@@ -404,6 +554,11 @@ const students = [
     cgpa: 8.11,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0532",
@@ -417,6 +572,11 @@ const students = [
     cgpa: 8.98,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0533",
@@ -430,6 +590,11 @@ const students = [
     cgpa: 9.06,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0534",
@@ -443,6 +608,11 @@ const students = [
     cgpa: 8.7,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0535",
@@ -456,6 +626,11 @@ const students = [
     cgpa: 8.22,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0536",
@@ -469,6 +644,11 @@ const students = [
     cgpa: 8.32,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0537",
@@ -482,6 +662,11 @@ const students = [
     cgpa: 5.87,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0538",
@@ -495,6 +680,11 @@ const students = [
     cgpa: 8.91,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0539",
@@ -508,6 +698,11 @@ const students = [
     cgpa: 7.38,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0540",
@@ -521,6 +716,11 @@ const students = [
     cgpa: 8.8,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0541",
@@ -534,6 +734,11 @@ const students = [
     cgpa: 8.54,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0542",
@@ -547,6 +752,11 @@ const students = [
     cgpa: 8.55,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0543",
@@ -560,6 +770,11 @@ const students = [
     cgpa: 9.7,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0544",
@@ -573,6 +788,11 @@ const students = [
     cgpa: 7.81,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0545",
@@ -586,6 +806,11 @@ const students = [
     cgpa: 9.13,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   // CSD
   {
@@ -600,6 +825,11 @@ const students = [
     cgpa: 8.54,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0547",
@@ -613,6 +843,11 @@ const students = [
     cgpa: 8.21,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0548",
@@ -626,6 +861,11 @@ const students = [
     cgpa: 8.25,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0549",
@@ -639,6 +879,11 @@ const students = [
     cgpa: 6.24,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0550",
@@ -652,6 +897,11 @@ const students = [
     cgpa: 9.36,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0551",
@@ -665,6 +915,11 @@ const students = [
     cgpa: 9.65,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0552",
@@ -678,6 +933,11 @@ const students = [
     cgpa: 9.22,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0553",
@@ -691,6 +951,11 @@ const students = [
     cgpa: 9.09,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0554",
@@ -704,6 +969,11 @@ const students = [
     cgpa: 9.57,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20881A0555",
@@ -717,6 +987,11 @@ const students = [
     cgpa: 8.52,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0556",
@@ -730,6 +1005,11 @@ const students = [
     cgpa: 8.27,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0557",
@@ -743,6 +1023,11 @@ const students = [
     cgpa: 5.23,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0558",
@@ -756,6 +1041,11 @@ const students = [
     cgpa: 9.06,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0559",
@@ -769,6 +1059,11 @@ const students = [
     cgpa: 7.64,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21881A0560",
@@ -782,6 +1077,11 @@ const students = [
     cgpa: 8.44,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   // ECE
   {
@@ -796,6 +1096,11 @@ const students = [
     cgpa: 9.22,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0502",
@@ -809,6 +1114,11 @@ const students = [
     cgpa: 8.55,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0503",
@@ -822,6 +1132,11 @@ const students = [
     cgpa: 8.89,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0504",
@@ -835,6 +1150,11 @@ const students = [
     cgpa: 7.19,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0505",
@@ -848,6 +1168,11 @@ const students = [
     cgpa: 8.04,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0506",
@@ -861,6 +1186,11 @@ const students = [
     cgpa: 8.11,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0507",
@@ -874,6 +1204,11 @@ const students = [
     cgpa: 9.55,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0508",
@@ -887,6 +1222,11 @@ const students = [
     cgpa: 8.09,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0509",
@@ -900,6 +1240,11 @@ const students = [
     cgpa: 6.31,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0510",
@@ -913,6 +1258,11 @@ const students = [
     cgpa: 8.82,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0511",
@@ -926,6 +1276,11 @@ const students = [
     cgpa: 8.59,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0512",
@@ -939,6 +1294,11 @@ const students = [
     cgpa: 8.95,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0513",
@@ -952,6 +1312,11 @@ const students = [
     cgpa: 8.62,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0514",
@@ -965,6 +1330,11 @@ const students = [
     cgpa: 9.56,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0515",
@@ -978,6 +1348,11 @@ const students = [
     cgpa: 8.5,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   // EEE
   {
@@ -992,6 +1367,11 @@ const students = [
     cgpa: 8.64,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0517",
@@ -1005,6 +1385,11 @@ const students = [
     cgpa: 5.35,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0518",
@@ -1018,6 +1403,11 @@ const students = [
     cgpa: 8.84,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0519",
@@ -1031,6 +1421,11 @@ const students = [
     cgpa: 7.63,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0520",
@@ -1044,6 +1439,11 @@ const students = [
     cgpa: 9.46,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0521",
@@ -1057,6 +1457,11 @@ const students = [
     cgpa: 9.18,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0522",
@@ -1070,6 +1475,11 @@ const students = [
     cgpa: 8.61,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0523",
@@ -1083,6 +1493,11 @@ const students = [
     cgpa: 8.85,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0524",
@@ -1096,6 +1511,11 @@ const students = [
     cgpa: 7.9,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0525",
@@ -1109,6 +1529,11 @@ const students = [
     cgpa: 9.54,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0526",
@@ -1122,6 +1547,11 @@ const students = [
     cgpa: 9.53,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0527",
@@ -1135,6 +1565,11 @@ const students = [
     cgpa: 8.15,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0528",
@@ -1148,6 +1583,11 @@ const students = [
     cgpa: 8.16,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0529",
@@ -1161,6 +1601,11 @@ const students = [
     cgpa: 6.08,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0530",
@@ -1174,6 +1619,11 @@ const students = [
     cgpa: 8.2,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   // CIVIL
   {
@@ -1188,6 +1638,11 @@ const students = [
     cgpa: 9.45,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0532",
@@ -1201,6 +1656,11 @@ const students = [
     cgpa: 8.95,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0533",
@@ -1214,6 +1674,11 @@ const students = [
     cgpa: 9.7,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0534",
@@ -1227,6 +1692,11 @@ const students = [
     cgpa: 9.62,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0535",
@@ -1240,6 +1710,11 @@ const students = [
     cgpa: 8.51,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0536",
@@ -1253,6 +1728,11 @@ const students = [
     cgpa: 9.19,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0537",
@@ -1266,6 +1746,11 @@ const students = [
     cgpa: 5.64,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0538",
@@ -1279,6 +1764,11 @@ const students = [
     cgpa: 9.44,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0539",
@@ -1292,6 +1782,11 @@ const students = [
     cgpa: 7.55,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0540",
@@ -1305,6 +1800,11 @@ const students = [
     cgpa: 8.76,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0541",
@@ -1318,6 +1818,11 @@ const students = [
     cgpa: 8.41,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0542",
@@ -1331,6 +1836,11 @@ const students = [
     cgpa: 8.37,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0543",
@@ -1344,6 +1854,11 @@ const students = [
     cgpa: 9.06,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0544",
@@ -1357,6 +1872,11 @@ const students = [
     cgpa: 7.33,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0545",
@@ -1370,6 +1890,11 @@ const students = [
     cgpa: 8.86,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   // MECH
   {
@@ -1384,6 +1909,11 @@ const students = [
     cgpa: 8.17,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0547",
@@ -1397,6 +1927,11 @@ const students = [
     cgpa: 8.18,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0548",
@@ -1410,6 +1945,11 @@ const students = [
     cgpa: 8.8,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0549",
@@ -1423,6 +1963,11 @@ const students = [
     cgpa: 6.32,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0550",
@@ -1436,6 +1981,11 @@ const students = [
     cgpa: 9.79,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0551",
@@ -1449,6 +1999,11 @@ const students = [
     cgpa: 8.42,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0552",
@@ -1462,6 +2017,11 @@ const students = [
     cgpa: 8.53,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0553",
@@ -1475,6 +2035,11 @@ const students = [
     cgpa: 8.04,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0554",
@@ -1488,6 +2053,11 @@ const students = [
     cgpa: 9.19,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "20885A0555",
@@ -1501,6 +2071,11 @@ const students = [
     cgpa: 8.76,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0556",
@@ -1514,6 +2089,11 @@ const students = [
     cgpa: 8.54,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0557",
@@ -1527,6 +2107,11 @@ const students = [
     cgpa: 5.21,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0558",
@@ -1540,6 +2125,11 @@ const students = [
     cgpa: 8.44,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0559",
@@ -1553,6 +2143,11 @@ const students = [
     cgpa: 7.07,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
   {
     rollno: "21885A0560",
@@ -1566,6 +2161,11 @@ const students = [
     cgpa: 8.25,
     no_of_internships: 0,
     sector_of_interest: [],
+    is_registered: false,
+    resume: {
+      url: "",
+      file_name: "",
+    },
   },
 ];
 
