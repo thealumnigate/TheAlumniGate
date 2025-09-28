@@ -1,10 +1,10 @@
 // initilization script for companies and users data into the database
 
 const mongoose = require("mongoose");
-const initDataCompanies = require("./Companies.js");
-const initDataUsers = require("./Users.js");
-const Database_Schema_Companies = require("../Schema/Companies.js");
-const Database_Schema_Users = require("../Schema/Users.js");
+const initDataCompanies = require("./companies.js");
+const initDataUsers = require("./students.js");
+const Database_Schema_Companies = require("../Schema/companies.js");
+const Database_Schema_Users = require("../Schema/students.js");
 
 main()
   .then(() => {
