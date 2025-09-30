@@ -63,7 +63,7 @@ const studentSchema = new mongoose.Schema(
         trim: true,
       },
     ],
-    is_registered: {
+    isRegisteredBefore: {
       type: Boolean,
       default: false,
     },
