@@ -4,12 +4,19 @@ import students from "./students.js";
 import Company from "../src/models/company.js";
 import Student from "../src/models/student.js";
 import bcrypt from "bcrypt";
+import dotenv from "dotenv";
 
-const MONGO_URI = "mongodb://127.0.0.1:27017/TheAlumniGate";
+dotenv.config({ path: "../.env" });
+
+const port = process.env.PORT || 5000;
+const MONGO_URI = process.env.MongoDB_URL;
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(MONGO_URI);
+    await mongoose.connect(MONGO_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
     console.log("Connected to MongoDB");
   } catch (err) {
     console.error("DB connection error:", err);
@@ -31,7 +38,6 @@ const initDBStudents = async () => {
   try {
     await Student.deleteMany({});
 
-    // hash passwords before inserting
     const studentsWithHashedPwds = await Promise.all(
       students.map(async (student) => {
         const hashedPwd = await bcrypt.hash(student.password, 10);
