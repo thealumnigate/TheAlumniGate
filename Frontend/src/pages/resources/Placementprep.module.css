@@ -1,0 +1,89 @@
+.placementprep {
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.companies {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(229, 231, 235, 0.4);
+  border-radius: 1rem;
+  padding: 1rem;
+  backdrop-filter: blur(8px);
+}
+
+.companies button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activeButton {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.inactiveButton {
+  background: rgba(243, 244, 246, 0.8);
+  color: #6b7280;
+  border: 1px solid rgba(209, 213, 219, 0.5);
+}
+
+.companies button:hover {
+  transform: translateY(-2px);
+}
+
+.activeButton:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+}
+
+.inactiveButton:hover {
+  background: rgba(229, 231, 235, 0.9);
+  color: #374151;
+}
+
+.companies button:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Dark mode styles */
+:global(.dark) .companies {
+  background: rgba(31, 41, 55, 0.3);
+  border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+:global(.dark) .inactiveButton {
+  background: rgba(55, 65, 81, 0.5);
+  color: #9ca3af;
+  border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+:global(.dark) .inactiveButton:hover {
+  background: rgba(75, 85, 99, 0.7);
+  color: #d1d5db;
+}
+
+@media (max-width: 768px) {
+  .placementprep {
+    padding: 1rem;
+  }
+
+  .companies {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .companies button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

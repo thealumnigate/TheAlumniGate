@@ -1,0 +1,117 @@
+.hrandtr {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.categoryCard {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.categoryCard:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.categoryCard h3 {
+  color: #1f2937;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f59e0b;
+  padding-bottom: 0.5rem;
+}
+
+/* Dark mode styles */
+:global(.dark) .categoryCard {
+  background: rgba(31, 41, 55, 0.3);
+  border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+:global(.dark) .categoryCard h3 {
+  color: #f9fafb;
+  border-bottom-color: #f59e0b;
+}
+
+.categoryCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categoryCard li {
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: rgba(254, 243, 199, 0.8);
+  border: 1px solid #f59e0b;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(8px);
+}
+
+.categoryCard li:hover {
+  background: rgba(253, 230, 138, 0.9);
+  transform: translateX(4px);
+}
+
+.categoryCard a {
+  color: #374151;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.categoryCard a:hover {
+  color: #d97706;
+}
+
+/* Dark mode styles for list items and links */
+:global(.dark) .categoryCard li {
+  background: rgba(254, 243, 199, 0.2);
+  border-color: #f59e0b;
+}
+
+:global(.dark) .categoryCard li:hover {
+  background: rgba(253, 230, 138, 0.3);
+}
+
+:global(.dark) .categoryCard a {
+  color: #d1d5db;
+}
+
+:global(.dark) .categoryCard a:hover {
+  color: #fbbf24;
+}
+
+.categoryCard a svg {
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.categoryCard a:hover svg {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .categoryCard {
+    padding: 1rem;
+  }
+
+  .categoryCard h3 {
+    font-size: 1.1rem;
+  }
+
+  .categoryCard li {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+}

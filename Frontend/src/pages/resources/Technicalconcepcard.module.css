@@ -1,0 +1,113 @@
+.concepcard {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(229, 231, 235, 0.4);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.concepcard:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.concepcard h2 {
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #10b981;
+  padding-bottom: 0.5rem;
+}
+
+.concepcard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.concepcard li {
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.concepcard li:hover {
+  background: #ecfdf5;
+  border-color: #10b981;
+  transform: translateX(4px);
+}
+
+.concepcard a {
+  color: #374151;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.concepcard a:hover {
+  color: #059669;
+}
+
+.concepcard a svg {
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.concepcard a:hover svg {
+  opacity: 1;
+}
+
+/* Dark mode styles */
+:global(.dark) .concepcard {
+  background: rgba(31, 41, 55, 0.3);
+  border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+:global(.dark) .concepcard h2 {
+  color: #f9fafb;
+  border-bottom-color: #10b981;
+}
+
+:global(.dark) .concepcard li {
+  background: rgba(55, 65, 81, 0.5);
+  border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+:global(.dark) .concepcard li:hover {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: #10b981;
+}
+
+:global(.dark) .concepcard a {
+  color: #d1d5db;
+}
+
+:global(.dark) .concepcard a:hover {
+  color: #10b981;
+}
+
+@media (max-width: 768px) {
+  .concepcard {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .concepcard h2 {
+    font-size: 1.25rem;
+  }
+
+  .concepcard li {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+}

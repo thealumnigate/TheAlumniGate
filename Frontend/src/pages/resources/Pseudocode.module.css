@@ -1,0 +1,219 @@
+.pseudocode {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pseudocode h1 {
+  color: #1f2937;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #0ea5e9;
+  padding-bottom: 0.5rem;
+}
+
+.description {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.sectionCard {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border: 1px solid rgba(229, 231, 235, 0.4);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.sectionCard:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.sectionCard h2 {
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #0ea5e9;
+  padding-bottom: 0.5rem;
+}
+
+.topicsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.topicItem {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  color: #374151;
+  transition: all 0.2s ease;
+}
+
+.topicItem:hover {
+  background: #ede9fe;
+  border-color: #8b5cf6;
+  transform: translateX(4px);
+}
+
+.resourceLink {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.resourceLink a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #0ea5e9;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.resourceLink a:hover {
+  background: #0284c7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4);
+}
+
+.resourceLink a span {
+  transition: transform 0.2s ease;
+}
+
+.resourceLink a:hover span {
+  transform: translateX(4px);
+}
+
+.tipsSection {
+  background: #fef7cd;
+  border: 1px solid #eab308;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.tipsSection h2 {
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #eab308;
+  padding-bottom: 0.5rem;
+}
+
+.tipsSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tipsSection li {
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #f59e0b;
+  font-weight: 500;
+  color: #374151;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.tipsSection li::before {
+  content: "💡";
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .pseudocode {
+    padding: 1rem;
+  }
+
+  .pseudocode h1 {
+    font-size: 2rem;
+  }
+
+  .sectionCard {
+    padding: 1.5rem;
+  }
+
+  .topicsList {
+    grid-template-columns: 1fr;
+  }
+
+  .tipsSection {
+    padding: 1.5rem;
+  }
+}
+
+/* Dark mode styles */
+:global(.dark) .pseudocode h1 {
+  color: #f9fafb;
+  border-bottom-color: #0ea5e9;
+}
+
+:global(.dark) .description {
+  color: #d1d5db;
+}
+
+:global(.dark) .sectionCard {
+  background: rgba(31, 41, 55, 0.3);
+  border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+:global(.dark) .sectionCard h2 {
+  color: #f9fafb;
+  border-bottom-color: #0ea5e9;
+}
+
+:global(.dark) .topicItem {
+  background: rgba(55, 65, 81, 0.5);
+  border: 1px solid rgba(75, 85, 99, 0.3);
+  color: #d1d5db;
+}
+
+:global(.dark) .topicItem:hover {
+  background: rgba(14, 165, 233, 0.1);
+  border-color: #0ea5e9;
+}
+
+:global(.dark) .tipsSection {
+  background: rgba(254, 243, 199, 0.2);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+:global(.dark) .tipsSection h2 {
+  color: #f9fafb;
+  border-bottom-color: #eab308;
+}
+
+:global(.dark) .tipsSection li {
+  background: rgba(55, 65, 81, 0.5);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #d1d5db;
+}

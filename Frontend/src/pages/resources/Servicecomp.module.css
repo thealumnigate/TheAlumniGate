@@ -1,0 +1,394 @@
+.round1 {
+  margin-bottom: 3rem;
+}
+
+.round1 h2 {
+  color: #1f2937;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 3px solid #3b82f6;
+  padding-bottom: 0.5rem;
+}
+
+.round1 h3 {
+  color: #374151;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+}
+
+/* Dark mode styles for headings */
+:global(.dark) .round1 h2 {
+  color: #f9fafb;
+  border-bottom-color: #60a5fa;
+}
+
+:global(.dark) .round1 h3 {
+  color: #d1d5db;
+}
+
+.sectA,
+.sectB,
+.sectC,
+.sectD {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.sectA {
+  background: rgba(254, 243, 199, 0.8);
+  border-color: #f59e0b;
+  backdrop-filter: blur(8px);
+}
+
+.sectB {
+  background: rgba(236, 253, 245, 0.8);
+  border-color: #10b981;
+  backdrop-filter: blur(8px);
+}
+
+.sectC {
+  background: rgba(237, 233, 254, 0.8);
+  border-color: #8b5cf6;
+  backdrop-filter: blur(8px);
+}
+
+.sectD {
+  background: rgba(254, 242, 242, 0.8);
+  border-color: #ef4444;
+  backdrop-filter: blur(8px);
+}
+
+/* Dark mode styles */
+:global(.dark) .sectA {
+  background: rgba(254, 243, 199, 0.2);
+  border-color: #f59e0b;
+}
+
+:global(.dark) .sectB {
+  background: rgba(236, 253, 245, 0.2);
+  border-color: #10b981;
+}
+
+:global(.dark) .sectC {
+  background: rgba(237, 233, 254, 0.2);
+  border-color: #8b5cf6;
+}
+
+:global(.dark) .sectD {
+  background: rgba(254, 242, 242, 0.2);
+  border-color: #ef4444;
+}
+
+.sectA ul,
+.sectB ul,
+.sectC ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sectA li,
+.sectB li,
+.sectC li {
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  color: #374151;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(8px);
+}
+
+/* Dark mode styles for list items */
+:global(.dark) .sectA li,
+:global(.dark) .sectB li,
+:global(.dark) .sectC li {
+  background: rgba(55, 65, 81, 0.8);
+  color: #d1d5db;
+  border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+.sectA li:hover,
+.sectB li:hover,
+.sectC li:hover {
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sectA a,
+.sectB a,
+.sectC a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sectA a:hover,
+.sectB a:hover,
+.sectC a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* Dark mode styles for links */
+:global(.dark) .sectA a,
+:global(.dark) .sectB a,
+:global(.dark) .sectC a {
+  color: #60a5fa;
+}
+
+:global(.dark) .sectA a:hover,
+:global(.dark) .sectB a:hover,
+:global(.dark) .sectC a:hover {
+  color: #93c5fd;
+}
+
+.branchcards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  flex: 1;
+}
+
+.branchcards a {
+  text-decoration: none;
+}
+
+.branchcards div {
+  padding: 1rem;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  color: #374151;
+  transition: all 0.3s ease;
+}
+
+.branchcards div:hover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+  transform: translateY(-2px);
+}
+
+/* Dark mode styles for branch cards */
+:global(.dark) .branchcards div {
+  background: rgba(55, 65, 81, 0.8);
+  border: 2px solid rgba(75, 85, 99, 0.3);
+  color: #d1d5db;
+}
+
+:global(.dark) .branchcards div:hover {
+  border-color: #60a5fa;
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.dsa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background: #ede9fe;
+  border-radius: 12px;
+  border: 1px solid #8b5cf6;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Dark mode styles for DSA section */
+:global(.dark) .dsa {
+  background: rgba(237, 233, 254, 0.2);
+  border-color: #8b5cf6;
+  color: #f9fafb;
+}
+
+/* Communication section styles */
+.communicationContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.commSection {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(229, 231, 235, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.commSection h3 {
+  color: #1f2937;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 0.5rem;
+}
+
+.commSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.commSection li {
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.commSection li:hover {
+  background: rgba(59, 130, 246, 0.2);
+  transform: translateX(4px);
+}
+
+.commSection a {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.commSection a:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+/* Dark mode styles for communication section */
+:global(.dark) .commSection {
+  background: rgba(31, 41, 55, 0.3);
+  border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+/* Dark mode styles for rounds 3 and 4 */
+:global(.dark) .commround {
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+:global(.dark) .hrandtr {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+:global(.dark) .commSection h3 {
+  color: #f9fafb;
+  border-bottom-color: #60a5fa;
+}
+
+:global(.dark) .commSection li {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+:global(.dark) .commSection li:hover {
+  background: rgba(59, 130, 246, 0.3);
+}
+
+:global(.dark) .commSection a {
+  color: #60a5fa;
+}
+
+:global(.dark) .commSection a:hover {
+  color: #93c5fd;
+}
+
+.dsa button {
+  padding: 0.75rem 1.5rem;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dsa button:hover {
+  background: #7c3aed;
+  transform: translateY(-2px);
+}
+
+.commround {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.hrandtr {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.placeholderImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  border-radius: 12px;
+  border: 2px dashed #d1d5db;
+  font-size: 4rem;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .sectA,
+  .sectB,
+  .sectC,
+  .sectD,
+  .commround,
+  .hrandtr {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .branchcards {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .dsa {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .placeholderImage {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    font-size: 3rem;
+  }
+}

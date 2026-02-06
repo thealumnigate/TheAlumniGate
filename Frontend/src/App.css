@@ -1,0 +1,122 @@
+/* Full-screen background container for the new design */
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+}
+
+.app-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  /* Moved here from app-shell */
+  /* rays behind */
+  background: radial-gradient(1200px 600px at 50% 0%, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0) 60%), #000000;
+}
+
+.app-content {
+  position: relative;
+  z-index: 10;
+  /* content above rays */
+  color: #e6e7eb;
+}
+
+/* Dark theme base */
+html,
+body,
+#root {
+  background-color: #000000;
+}
+
+/* Light mode background */
+html:not(.dark) .app-bg {
+  background: radial-gradient(1200px 600px at 50% 0%, rgba(14, 165, 233, 0.08), rgba(255, 255, 255, 0) 60%), #f8fafc;
+}
+
+/* Light mode text color */
+html:not(.dark) .app-content {
+  color: #1e293b;
+}
+
+/* Light theme base */
+html:not(.dark),
+html:not(.dark) body,
+html:not(.dark) #root {
+  background-color: #f8fafc;
+}
+
+/* Light rays visibility based on theme */
+.dark-rays {
+  display: none;
+}
+
+.light-rays {
+  display: none;
+}
+
+html.dark .dark-rays {
+  display: block;
+}
+
+html:not(.dark) .light-rays {
+  display: none;
+}
+
+/* Moving circles visibility - only in light mode */
+.light-circles {
+  display: none;
+}
+
+html:not(.dark) .light-circles {
+  display: block;
+}
+
+html.dark .light-circles {
+  display: none;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
